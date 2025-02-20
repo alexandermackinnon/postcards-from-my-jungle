@@ -1,0 +1,118 @@
+/* ========== Reset & Base Styles ========== */
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a default font, background color, and text color */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #242f2a;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* ========== Typography ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* ========== Buttons ========== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: transparent;
+  color: #242f2a;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #242f2a;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* ========== Links ========== */
+
+.link {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/* ========== Utility Classes ========== */
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ========== Header ========== */
+
+header {
+  /* Header styles */
+}
+
+/* ========== Footer ========== */
+footer {
+  /* Footer styles */
+}
+
+/* ========== Layout & Containers ========== */
+main {
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vh - 40px);
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-frame {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  overflow: hidden;
+}
