@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Postcards from my Jungle</title>
     <link rel="stylesheet" href="inc/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header class="hidden">
-      <h1>Postcards from my Jungle</h1>
+    <header>
+      <h1>
+        <a
+          class="link"
+          href="https://github.com/alexandermackinnon/postcards-from-my-jungle"
+          >Postcards from my Jungle</a
+        >
+      </h1>
+      <div>
+        <button id="toggle-sound" class="button">Sound On</button>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main class="main text-center">
-      <!-- Square Image Frame (Postcard Display) -->
       <div class="image-frame">
-        <!-- Placeholder for images (this will be updated later with JS) -->
+        <img id="slideshow-image" src="" alt="Animal Image" />
+        <p id="animal-text"></p>
       </div>
+      <audio id="animal-sound"></audio>
     </main>
 
     <!-- Footer -->
-    <footer class="hidden">
-      <p>&copy; Postcards from my Jungle</p>
+    <footer>
+      <p>Generative Soundscapes</p>
+      <p>by Alexander MacKinnon</p>
     </footer>
 
     <script src="inc/script.js"></script>
